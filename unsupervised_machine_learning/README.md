@@ -18,3 +18,24 @@ This assignment focuses on **Estimation Theory**, covering topics such as **log-
   - Checked the efficiency of the estimator by proving that its variance equals the CRLB.
   
 ---
+Here’s your assignment summary, following the format you provided:
+
+---
+
+# A2 - Maximum Likelihood
+
+### **Overview**
+This assignment explores **Maximum Likelihood Estimation (MLE)** for a Poisson-distributed dataset, focusing on analytical derivation, numerical optimization, and visualization of the log-likelihood function.
+
+### **Key Tasks**
+
+- **Analytical Estimation and Optimization**  
+  - Derived the MLE for the Poisson rate parameter \( \lambda \) using calculus.  
+  - Implemented a function to compute the MLE analytically.
+  - Estimated \( \lambda \) numerically by maximizing the log-likelihood over a discrete set of values.  
+
+- **Log-Likelihood Visualization**  
+  - Plotted the log-likelihood function over a range of \( \lambda \) values.  
+  - Marked and compared the analytical and numerical MLE estimates.
+
+---
