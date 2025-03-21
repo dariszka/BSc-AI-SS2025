@@ -18,9 +18,6 @@ This assignment focuses on **Estimation Theory**, covering topics such as **log-
   - Checked the efficiency of the estimator by proving that its variance equals the CRLB.
   
 ---
-Here’s your assignment summary, following the format you provided:
-
----
 
 # A2 - Maximum Likelihood
 
@@ -39,3 +36,22 @@ This assignment explores **Maximum Likelihood Estimation (MLE)** for a Poisson-d
   - Marked and compared the analytical and numerical MLE estimates.
 
 ---
+# A3 - PCA
+
+### **Overview**  
+This assignment focuses on **implementing Principal Component Analysis (PCA) from scratch**, applying it to the Iris dataset to explore dimensionality reduction and variance preservation.
+
+### **Key Tasks**  
+
+- **Data Preprocessing and Exploration**  
+  - Loaded and visualized the Iris dataset using histograms to analyze feature distributions across classes.  
+
+- **Covariance Matrix and Eigen Decomposition**  
+  - Computed the covariance matrix to quantify relationships between features.  
+  - Performed eigen decomposition to obtain eigenvalues and eigenvectors.
+
+- **Dimensionality Reduction with PCA**  
+  - Sorted eigenpairs by explained variance and selected the top principal components.  
+  - Projected the dataset onto a **lower-dimensional subspace (2D)** while retaining maximum variance.
+  
+
