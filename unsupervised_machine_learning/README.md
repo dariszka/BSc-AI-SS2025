@@ -36,6 +36,7 @@ This assignment explores **Maximum Likelihood Estimation (MLE)** for a Poisson-d
   - Marked and compared the analytical and numerical MLE estimates.
 
 ---
+
 # A3 - PCA
 
 ### **Overview**  
@@ -53,5 +54,33 @@ This assignment focuses on **implementing Principal Component Analysis (PCA) fro
 - **Dimensionality Reduction with PCA**  
   - Sorted eigenpairs by explained variance and selected the top principal components.  
   - Projected the dataset onto a **lower-dimensional subspace (2D)** while retaining maximum variance.
-  
+
+---
+
+# A4 - PCA and Kernel PCA
+
+### **Overview**  
+This assignment explores **Principal Component Analysis (PCA)** and **Kernel PCA**, with a focus on variance maximization, dimensionality reduction, and handling nonlinear structures. 
+
+### **Key Tasks**  
+
+- **Theoretical Properties of PCA**  
+  - Proved that the covariance matrix is positive semi-definite and explained why this guarantees non-negative eigenvalues.
+  - Interpreted the role of eigenvalues in PCA as measures of variance captured by each principal component.
+
+- **PCA for Image Compression**  
+  - Applied PCA to compress facial image data from 2250 dimensions to preserve **50%**, **75%**, and **99%** of total variance.
+  - Reconstructed and visualized images at different compression levels to evaluate visual quality and variance retention.
+
+- **2D PCA Visualization**  
+  - Performed PCA on two low-dimensional datasets and visualized the principal components over the original data.
+  - Computed and displayed the **explained variance ratio** to analyze how much information is retained by each component.
+
+- **Kernel PCA with Polynomial and RBF Kernels**  
+  - Implemented Kernel PCA using both **polynomial** and **RBF (Gaussian)** kernels.
+  - Visualized nonlinear transformations and compared the kernel results to linear PCA, especially on data that is not linearly separable.
+  - Demonstrated that for nonlinearly separable data, the **first RBF component** already enables near-complete class separation.
+
+--- 
+
 
