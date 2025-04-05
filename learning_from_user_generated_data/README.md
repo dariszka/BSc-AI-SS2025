@@ -15,6 +15,7 @@ This assignment explores **recommender systems**, focusing on interaction-based 
   - Extended the popularity-based approach to recommend items based on regional preferences.
 
 ---
+
 # Exercise 2: Collaborative Filtering + Implicit Feedback
 
 ### **Overview**
@@ -33,5 +34,26 @@ This assignment builds on recommender system fundamentals by implementing an **i
 - **Top-K Recommendation System**  
   - Built an efficient recommender that ranks unseen items based on predicted user-item scores.
   - Returned top-k personalized recommendations with corresponding similarity scores.
+
+---
+
+# Exercise 3: Model-Based approaches
+
+### **Overview**
+This assignment introduces **model-based collaborative filtering** using **matrix factorization techniques** to generate personalized item recommendations based on implicit feedback from the LFM-Tiny dataset.
+
+### **Key Tasks**
+
+- **Matrix Factorization via SVD**  
+  - Implemented truncated Singular Value Decomposition (SVD) to extract compact latent representations of users and items.
+  - Used dot product of latent vectors to approximate interaction scores and generate recommendations.
+
+- **Iterative Matrix Factorization with PyTorch**  
+  - Built a trainable matrix factorization model using `nn.Embedding` layers for user and item embeddings.
+  - Trained the model using binary cross-entropy loss and the Adam optimizer, reconstructing the full user-item interaction matrix.
+
+- **Top-K Recommendation Engine**  
+  - Developed a recommendation function that ranks unseen items based on dot-product similarity between user and item embeddings.
+  - Ensured exclusion of previously interacted items and padded the result with `-1` if fewer than `topK` items were available.
 
 ---
