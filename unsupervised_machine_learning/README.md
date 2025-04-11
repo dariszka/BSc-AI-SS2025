@@ -83,4 +83,22 @@ This assignment explores **Principal Component Analysis (PCA)** and **Kernel PCA
 
 --- 
 
+# A5 – ICA 
 
+### **Overview**  
+This assignment focuses on **Independent Component Analysis (ICA)** and compares it to **Principal Component Analysis (PCA)** through both theoretical and practical experiments. 
+
+### **Key Tasks**
+
+- **Moment and Cumulant Analysis**  
+  - Derived the first four cumulants of a random variable using the Taylor expansion of the cumulant generating function \( K_X(t) = \log \mathbb{E}[e^{tX}] \), and verified moment relations for a standard normal variable using integration tricks and recurrence.
+
+- **Comparison of PCA and ICA on CIFAR-10**  
+  - Applied PCA and ICA (via `sklearn.decomposition`) to the CIFAR-10 dataset using 100 components each.  
+  - Visualized the extracted components using custom plotting functions.
+
+- **Cocktail Party Problem with FastICA**  
+  - Loaded three mono audio signals (`birds.wav`, `ocean.wav`, `frogs.wav`) and mixed them using a random **3×3 full-rank matrix**.
+  - Used `FastICA` to blindly recover the original sources from the mixtures.
+
+--- 
