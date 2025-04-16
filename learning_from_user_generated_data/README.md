@@ -57,3 +57,24 @@ This assignment introduces **model-based collaborative filtering** using **matri
   - Ensured exclusion of previously interacted items and padded the result with `-1` if fewer than `topK` items were available.
 
 ---
+
+# Exercise 4: Evaluation 
+
+### **Overview**  
+This assignment focuses on evaluating the **offline performance** of recommender systems using **predictive and ranking-based metrics** on the LFM-Tiny dataset. Three recommenders are tested: **TopPop**, **ItemKNN**, and **SVD**.
+
+### **Key Tasks**
+
+- **Precision@K and Recall@K**  
+  - Implemented functions to compute the proportion of relevant items retrieved among the top-K recommendations and relative to the total number of relevant items.
+
+- **DCG and nDCG Metrics**  
+  - Calculated discounted cumulative gain to evaluate the quality of item ranking.
+  - Normalized DCG against ideal rankings to produce nDCG scores.
+
+- **Evaluation Pipeline**  
+  - Evaluated all three recommenders (TopPop, ItemKNN, SVD) using the implemented metrics.
+  - Built a flexible evaluation loop and ensured results were sanity-checked using assert tests.
+
+--- 
+
