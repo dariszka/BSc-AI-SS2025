@@ -78,3 +78,25 @@ This assignment focuses on evaluating the **offline performance** of recommender
 
 --- 
 
+# Exercise 5: Popularity bias Evaluation
+
+### **Overview**
+
+This assignment investigates **popularity bias** in recommender systems on the LFM-Tiny dataset.
+For each user, the popularity distribution of the items they actually listened to versus the items recommended by three algorithms—**TopPop**, **ItemKNN**, and **SVD** are compared using information-theoretic divergence measures.
+
+### **Key Tasks**
+
+* **KL-Divergence and Jensen-Shannon Divergence**
+
+  * Implemented numerically stable `KL(P‖Q)` and symmetric `JSD(P,Q)` functions, including zero-probability smoothing and proper re-normalisation.
+
+* **Per-User Popularity Profiles**
+
+  * Bucketed items into predefined popularity bins and built probability mass functions for each user’s training history and generated recommendations.
+
+* **Popularity-Bias Metric**
+
+  * Calculated the average JSD across all users to quantify how much a recommender’s output deviates from historical preferences.
+
+---
