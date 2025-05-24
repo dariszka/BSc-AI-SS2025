@@ -102,3 +102,38 @@ This assignment focuses on **Independent Component Analysis (ICA)** and compares
   - Used `FastICA` to blindly recover the original sources from the mixtures.
 
 --- 
+
+
+# A6 – Factor Analysis
+
+### **Overview**
+
+This assignment focuses on **Factor Analysis (FA)**, 
+The task involved deriving and implementing the Expectation-Maximization (EM) algorithm for FA, 
+comparing it to a first-order **Gradient Descent (GD)** alternative, and analysing the convergence behavior 
+and loss curves.
+
+---
+
+### **Key Tasks**
+
+* **Mathematical Derivation of the EM Algorithm**
+
+  * Implemented the EM procedure for FA based on the lecture derivation:
+
+    * **E-step**: computed $\mathbb{E}[y_i \mid x_i]$ and $\mathbb{E}[y_i y_i^\top \mid x_i]$ using conditional expectations for multivariate Gaussians.
+    * **M-step**: derived closed-form updates for the factor loadings $U$ and noise covariance $\Psi$, with matrix speedups applied (e.g., matrix inversion lemma and covariance caching).
+
+* **Efficient Implementation of EM with Speedups**
+
+  * Used the matrix inversion lemma to avoid direct inversion of the full covariance matrix.
+  * Replaced sums with precomputed covariance matrices to accelerate batch updates.
+  * Vectorized several components (e.g., E-step) for performance and clarity.
+
+* **Comparison of EM and Gradient Descent**
+
+  * Implemented a baseline GD optimization routine for the FA loss function using the analytical gradient of the log-likelihood.
+  * Normalized the data to better compare convergence scales across methods.
+  * Compared the learning dynamics by plotting loss curves for both EM and GD across multiple random seeds. 
+
+---
